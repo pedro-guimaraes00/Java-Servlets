@@ -12,6 +12,7 @@
 		<ul>
 			<c:forEach items="${companies}" var="company">
 				<li>${company.name}</li>
+				<a href="/gerenciador/deleteCompany?id=${company.id}">remover</a>
 			</c:forEach>
 		</ul>
 	</body>
