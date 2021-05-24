@@ -23,7 +23,7 @@ public class listCompanies extends HttpServlet {
 		Database database = new Database();
 		List<Company> lista = database.getCompanies();
 		
-			request.setAttribute("empresas", lista);
+			request.setAttribute("companies", lista);
 			RequestDispatcher rd = request.getRequestDispatcher("/CompaniesList.jsp");
 			rd.forward(request, response);
 	}

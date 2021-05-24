@@ -10,8 +10,8 @@
 	</head>
 	<body>
 		<ul>
-			<c:forEach items="${empresas}" var="empresa">
-				<li>${empresa.name}</li>
+			<c:forEach items="${companies}" var="company">
+				<li>${company.name}</li>
 			</c:forEach>
 		</ul>
 	</body>
