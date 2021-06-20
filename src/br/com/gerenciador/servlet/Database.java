@@ -32,4 +32,14 @@ public class Database {
 		
 	}
 	
+	public Company searchCompany(Integer id) {
+		for(Company company: lista) {
+			if(company.getId() == id) {
+				return company;
+			}
+		}
+		return null;
+		
+	}
+	
 }
